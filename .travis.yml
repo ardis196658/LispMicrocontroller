@@ -1,5 +1,8 @@
 language: c
-before_install:
-- sudo apt-get install iverilog
+sudo: false
+addons:
+  apt:
+    packages:
+      - iverilog
 script:
 - make test
